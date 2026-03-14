@@ -1,77 +1,156 @@
-<!-- <<<<<<< HEAD
-# Welcome to your Lovable project
+Relief Wing 🚁
+AI-Powered Disaster Response Platform
 
-## Project info
+Relief Wing is a technology-driven disaster response system designed to assist rescue teams during floods and natural disasters. The platform combines computer vision, drones, IoT, and a web-based coordination system to detect stranded humans and animals, identify obstacles, and enable rapid delivery of essential supplies such as food, water, and medicines.
 
-**URL**: https://lovable.dev/projects/9a12f093-a634-4453-87f2-0aab88e7efe5
+The project aims to improve situational awareness and response efficiency during disaster scenarios by leveraging real-time AI detection and a centralized monitoring dashboard.
 
-## How can I edit this code?
+Project Vision
 
-There are several ways of editing your application.
+Natural disasters often leave people stranded in inaccessible areas where traditional rescue operations struggle to reach quickly. Relief Wing proposes a drone-assisted AI system capable of:
 
-**Use Lovable**
+Detecting humans and animals using computer vision
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9a12f093-a634-4453-87f2-0aab88e7efe5) and start prompting.
+Identifying obstacles for safe drone navigation
 
-Changes made via Lovable will be committed automatically to this repo.
+Allowing victims to send SOS signals for emergency assistance
 
-**Use your preferred IDE**
+Enabling rescue teams to monitor disaster zones via a centralized dashboard
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Coordinating delivery of relief supplies
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+This platform demonstrates how AI and robotics can support humanitarian operations and improve disaster management.
 
-Follow these steps:
+Key Features
+AI-Based Detection
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Uses a YOLO (You Only Look Once) computer vision model to detect humans and objects from drone imagery.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Drone-Assisted Monitoring
 
-# Step 3: Install the necessary dependencies.
-npm i
+Supports drone camera feeds for monitoring disaster zones and locating stranded individuals.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Obstacle Awareness
+
+Uses computer vision (and can integrate LiDAR sensors) to detect obstacles for safer drone navigation.
+
+SOS Emergency System
+
+Allows people trapped during disasters to send SOS requests for essential supplies such as food, water, and medicine.
+
+Web-Based Dashboard
+
+Provides a user interface and admin panel for monitoring incidents, viewing detections, and coordinating relief operations.
+
+Tech Stack
+
+Artificial Intelligence
+
+YOLO Object Detection
+
+Python
+
+OpenCV
+
+Ultralytics
+
+Web Development
+
+MERN Stack
+
+MongoDB
+
+Express.js
+
+React.js
+
+Node.js
+
+Other Technologies
+
+Drone Imaging
+
+IoT Communication
+
+Flask API
+
+Computer Vision
+
+Project Architecture
+Drone Camera Feed
+        ↓
+YOLO Detection Model (Python API)
+        ↓
+Backend Server
+        ↓
+MongoDB Database
+        ↓
+React Frontend Dashboard
+How to Run the Project
+
+Follow the steps below to run the project locally.
+
+1. Download the Project
+
+Clone or download the complete repository.
+
+git clone https://github.com/YOUR_USERNAME/relief-wing.git
+
+or download the ZIP and extract it.
+
+2. Run the Backend (YOLO Detection API)
+
+Navigate to the API folder.
+
+cd API
+
+Run the Python backend server.
+
+python main.py
+
+This will start the YOLO detection model and backend API.
+
+3. Open the Website
+
+Open the following website in your browser:
+
+http://127.0.0.1:5000/video_feed
+4. Start the Frontend
+
+Navigate to the frontend folder.
+
+Run the development server.
+
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+This will start the React frontend dashboard.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+5. Access the Platform
 
-**Use GitHub Codespaces**
+Once both backend and frontend are running:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The AI detection model will process camera input
 
-## What technologies are used for this project?
+The dashboard will display the system interface
 
-This project is built with:
+The platform will be ready for testing and development
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Future Improvements
 
-## How can I deploy this project?
+Real-time drone camera integration
 
-Simply open [Lovable](https://lovable.dev/projects/9a12f093-a634-4453-87f2-0aab88e7efe5) and click on Share -> Publish.
+LiDAR sensor fusion for improved obstacle detection
 
-## Can I connect a custom domain to my Lovable project?
+Automated drone navigation for supply delivery
 
-Yes, you can!
+Cloud deployment for large-scale disaster monitoring
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Mobile SOS application for victims
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
-=======
-# relief-wing
->>>>>>> c1292ab447e51231158f7abb90ef899a49b60369 -->
+Achievement
+
+Relief Wing secured 4th place in a State-Level Business Pitching Competition, demonstrating the potential of AI-assisted disaster response technology.
+
+Disclaimer
+
+This project is a prototype and research implementation intended for demonstration and educational purposes.
